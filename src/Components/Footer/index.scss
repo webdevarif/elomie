@@ -1,0 +1,14 @@
+.footer {
+  &-widget {
+    margin-bottom: 1.5rem;
+  }
+  ul li a {
+    color: var(--linkColor, var(--base-50));
+    display: block;
+    line-height: 1.8;
+
+    &:hover {
+      --linkColor: var(--base-inverted);
+    }
+  }
+}

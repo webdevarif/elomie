@@ -1,0 +1,86 @@
+.blog-list-thumb {
+  --thumbWidth: 100px;
+  width: var(--thumbWidth);
+  min-width: var(--thumbWidth);
+  background-size: cover;
+  background-position: center;
+}
+
+.features-heading {
+  margin-bottom: 1.5rem;
+  overflow: hidden;
+
+  .card-image img {
+    width: 100%;
+    height: var(--BannerSize, 250px);
+    object-fit: cover;
+    object-position: center;
+    @media (max-width: 991px) {
+      --BannerSize: 150px;
+    }
+  }
+}
+
+// POST SHARE
+.post__share {
+  --ShareBorder: 1px solid var(--base-a10);
+  display: inline-block;
+  border-radius: var(--radius-xs);
+  border: var(--ShareBorder);
+  overflow: hidden;
+
+  span,
+  a {
+    --size: 40px;
+    width: var(--size);
+    min-width: var(--size);
+    height: var(--size);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: color 0s, background-color 0s;
+  }
+  a {
+    border-left: var(--ShareBorder);
+
+    @each $name,
+      $color
+        in (
+          "facebook" "#234e9a",
+          "twitter" "#32aadc",
+          "instagram" "#c32aa3",
+          "linkedin" "#007bb5",
+          "pinterest" "#EE4056"
+        )
+    {
+      &.#{$name} {
+        color: #{$color};
+
+        &:hover {
+          background: #{$color};
+          color: var(--base-inverted);
+        }
+      }
+    }
+  }
+}
+
+.post {
+  &_action_tools {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    li {
+      padding: 1rem 1.5rem;
+      height: 100%;
+
+      &:not(:last-child) {
+        border-right: 1px solid var(--base-a5);
+      }
+      .react {
+        margin-right: 0.25rem;
+        vertical-align: middle;
+      }
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.auth-page {
+  min-height: var(--authPageHeight, 100vh);
+  background-color: var(--authPageBg, var(--base-inverted));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-size: 37%;
+  background-position: top left;
+
+  &-content {
+    min-height: 440px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+}

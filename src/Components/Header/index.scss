@@ -1,0 +1,34 @@
+.header {
+  background: var(--headerBG);
+
+  &.dashboard {
+    --headerBG: var(--base-0);
+  }
+  .navbar {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &__logo img {
+    max-height: var(--logoHeight, 30px);
+  }
+
+  &__menu {
+    li {
+      display: inline-block;
+
+      a {
+        padding: var(--padding, 0.75rem 1rem);
+        color: var(--linkColor, var(--base-60));
+        display: inline-block;
+
+        &.active,
+        &:hover {
+          --linkColor: var(--base-primary);
+        }
+      }
+    }
+  }
+}

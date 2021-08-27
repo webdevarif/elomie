@@ -1,0 +1,99 @@
+.sidebar {
+  background: var(--base-90);
+  height: 100vh;
+  width: var(--sidebarwidth, 250px);
+  min-width: var(--sidebarwidth, 250px);
+  max-width: 100%;
+  padding-top: var(--padding-Y, 1rem);
+  padding-bottom: var(--padding-Y, 1rem);
+  box-sizing: border-box;
+  z-index: var(--zSidebar, 999);
+  position: var(--sidebarPosition, sticky);
+  top: 0;
+
+  @media (max-width: 991px) {
+    --sidebarPosition: fixed;
+    left: var(--sidebarLeft, 0);
+
+    &-overlay {
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: var(--base-100);
+      position: fixed;
+      z-index: var(--zOverlay, 998);
+      opacity: 0.2;
+    }
+  }
+
+  &:not(.open) {
+    --sidebarPosition: fixed;
+    left: var(--sidebarLeft, -100%);
+    top: 0;
+  }
+  &-logo {
+    padding-left: var(--padding-X, 1.25rem);
+    padding-right: var(--padding-X, 1.25rem);
+    height: 50px;
+
+    img {
+      max-height: 100%;
+      width: auto;
+    }
+  }
+  &-menu {
+    overflow-y: auto;
+    max-height: calc(100vh - 5.8rem);
+    li a {
+      color: var(--base-10);
+      display: flex;
+      align-items: center;
+      font-size: var(--fs-lg);
+      padding: 0.5rem 1.25rem;
+      border-bottom: 1px solid var(--base-a70);
+
+      &.active,
+      &:hover {
+        background-color: var(--base-primary-darker);
+      }
+    }
+  }
+
+  &-widget {
+    .widget-user-header {
+      padding: 20px;
+      height: 120px;
+    }
+    .widget-user-image {
+      text-align: center;
+      margin-top: -50px;
+      img {
+        border: 3px solid var(--base-20);
+      }
+    }
+  }
+}
+
+.card-categories {
+  --badgeBodyPadding: 0;
+
+  li:not(:last-child) {
+    border-bottom: 1px solid var(--base-a5);
+  }
+
+  li a {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--item-padding, 0.5rem 1rem);
+    color: var(--base-70);
+    text-decoration: none;
+    background: var(--linkBG, var(--base-inverted));
+
+    &:hover {
+      --linkBG: var(--base-10);
+    }
+  }
+}
