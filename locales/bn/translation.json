@@ -1,0 +1,66 @@
+{
+    "menu": {
+        "home": "হোম",
+        "dashboard": "ড্যাসবোর্ড",
+        "reports": "রিপোর্ট",
+        "earnings": "ইনকাম",
+        "forum" : "ফোরাম",
+        "blog" : "ব্লগিং",
+        "settings" : "সেটিংস",
+        "logout" : "লগ আউট"
+    },
+    "page": {
+        "error": {
+            "title": "দুঃখিত",
+            "404": "!",
+            "paragraph": "ওপস! কিছুই পাওয়া যায়নি",
+            "go_home": "হোম এ যান"
+        },
+        "login": {
+            "title": "লগ ইন",
+            "paragraph": "দয়া করে আপনার একাউন্টের আইডি পাসওয়ার্ড দিয়ে লগিন করুন।",
+            "keep_logged_in": "আমাকে ভবিষ্যতে লগিন রাখুন ।",
+            "dont_have_account": "এতিমধ্যে আপনার কোন একাউন্ট নেই?",
+            "sign_up": "একাউন্ট খুলুন", 
+            "forget_password": "পাসওয়ার্ড ভুলে গেছেন?"
+        },
+        "register": {
+            "title": "একাউন্ট খুলুন",
+            "paragraph": "We need some of your information to get started.",
+            "corfirm_account": "By creating an account you agree to the",
+            "terms_use": "terms of use",
+            "and": "and",
+            "privacy_policy": "privacy and policy",
+            "already_have_account": "ইতিমধ্যে একটি একাউন্ট আছে?"
+        },
+        "forget_password": {
+            "title": "পাসওয়ার্ড ভুলে গেছেন",
+            "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quasi.",
+            "send_reset_link": "লিঙ্ক সেন্ড করুন",
+            "back_to_login": "লগিন পেইজে যাবেন?"
+        },
+        "blog": {
+            "create_post": "নতুন পোস্ট তৈরি করুন"
+        }
+    },
+    "form": {
+        "field": {
+            "email": {
+                "title": "ইমেইল দিন",
+                "placeholder": "ই-মেইল"
+            },
+            "password": {
+                "title": "পাসওয়ার্ড দিন",
+                "placeholder": "পাসওয়ার্ড"
+            },
+            "first_name": {
+                "title": "প্রথম নাম",
+                "placeholder": "প্রথম নাম"
+            },
+            "last_name": {
+                "title": "শেষ নাম",
+                "placeholder": "শেষ নাম"
+            }
+        }
+    }
+}

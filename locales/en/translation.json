@@ -1,0 +1,66 @@
+{
+    "menu": {
+        "home": "Home",
+        "dashboard": "Dashboard",
+        "reports": "Reports",
+        "earnings": "Earnings",
+        "forum" : "Forum",
+        "blog" : "Blogging",
+        "settings": "Settings",
+        "logout" : "Logout"
+    },
+    "page": {
+        "error": {
+            "title": "Error",
+            "404": "404",
+            "paragraph": "Oops ! Something Went Wrong",
+            "go_home": "Go Home"
+        },
+        "login": {
+            "title": "Log In",
+            "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quasi.",
+            "keep_logged_in": "Keep me logged in.",
+            "dont_have_account": "Don't have an account?",
+            "sign_up": "Sign Up",
+            "forget_password": "Forget Password?"
+        },
+        "register": {
+            "title": "Register Account",
+            "paragraph": "We need some of your information to get started.",
+            "corfirm_account": "By creating an account you agree to the",
+            "terms_use": "terms of use",
+            "and": "and",
+            "privacy_policy": "privacy and policy",
+            "already_have_account": "Already have an account?"
+        },
+        "forget_password": {
+            "title": "Forget Password",
+            "paragraph": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab, quasi.",
+            "send_reset_link": "Send Reset Link",
+            "back_to_login": "Back to Login?"
+        },
+        "blog": {
+            "create_post": "Create New Post"
+        }
+    },
+    "form": {
+        "field": {
+            "email": {
+                "title": "Enter Email",
+                "placeholder": "e-mail"
+            },
+            "password": {
+                "title": "Enter Password",
+                "placeholder": "password"
+            },
+            "first_name": {
+                "title": "First Name",
+                "placeholder": "first name"
+            },
+            "last_name": {
+                "title": "Last Name",
+                "placeholder": "last name"
+            }
+        }
+    }
+}
